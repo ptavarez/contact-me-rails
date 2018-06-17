@@ -3,7 +3,11 @@ class ContactsController < ApplicationController
 
   # GET /contacts
   def index
-    @contacts = Contact.all
+    @contacts = if params[:search]
+                  Contact.search_for(params[:search])
+                else
+                  Contact.all
+                end
 
     render json: @contacts
   end
@@ -46,6 +50,7 @@ class ContactsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def contact_params
-      params.require(:contact).permit(:first_name, :last_name, :job_title, :phone_number, :email)
+      params.require(:contact).permit(:first_name, :last_name, :job_title,
+                                      :phone_number, :email, :search)
     end
 end
