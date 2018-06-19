@@ -4,7 +4,7 @@ class ContactsController < ProtectedController
   # GET /contacts
   def index
     @contacts = if params[:search]
-                  current_user.contacts.earch_for(params[:search])
+                  current_user.contacts.search_for(params[:search])
                 else
                   current_user.contacts
                 end
