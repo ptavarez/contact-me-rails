@@ -1,15 +1,15 @@
-class ContactsController < ApplicationController
+class ContactsController < ProtectedController
   before_action :set_contact, only: [:show, :update, :destroy]
 
   # GET /contacts
   def index
     @contacts = if params[:search]
-                  Contact.search_for(params[:search])
+                  current_user.contacts.earch_for(params[:search])
                 else
-                  Contact.all
+                  current_user.contacts
                 end
 
-    render json: @contacts
+    render json: @contacts.order(last_name: :asc)
   end
 
   # GET /contacts/1
@@ -19,7 +19,7 @@ class ContactsController < ApplicationController
 
   # POST /contacts
   def create
-    @contact = Contact.new(contact_params)
+    @contact = current_user.contacts.build(contact_params)
 
     if @contact.save
       render json: @contact, status: :created, location: @contact
