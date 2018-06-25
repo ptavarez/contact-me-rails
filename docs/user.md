@@ -16,7 +16,7 @@
 </tr>
 <tr>
 <td>POST</td>
-<td>`/sign-up`</td>
+<td>/sign-up</td>
 <td><strong>credentials</strong></td>
 <td>201, Created</td>
 <td><strong>user</strong></td>
@@ -28,7 +28,7 @@
 </tr>
 <tr>
 <td>POST</td>
-<td>`/sign-in`</td>
+<td>/sign-in</td>
 <td><strong>credentials</strong></td>
 <td>200 OK</td>
 <td><strong>user w/token</strong></td>
@@ -40,7 +40,7 @@
 </tr>
 <tr>
 <td>DELETE</td>
-<td>`/sign-out/:id`</td>
+<td>/sign-out/:id</td>
 <td>empty</td>
 <td>201 Created</td>
 <td>empty</td>
@@ -52,7 +52,7 @@
 </tr>
 <tr>
 <td>PATCH</td>
-<td>`/change-password/:id`</td>
+<td>/change-password/:id</td>
 <td><strong>passwords</strong></td>
 <td>204 No Content</td>
 <td><strong>user w/token</strong></td>
