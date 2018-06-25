@@ -58,7 +58,9 @@ In your terminal: ```bundle install```
 
 ## API Guides
 [Users Guide](docs/user.md)
+
 [Examples Guide](docs/example.md)
+
 [Contacts Guide](docs/contact.md)
 
 ## Entity Relationship Diagram (ERD)
