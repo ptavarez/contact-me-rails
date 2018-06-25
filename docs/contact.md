@@ -25,7 +25,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>GET</td>
-<td>`/Contacts`</td>
+<td>/Contacts</td>
 <td>n/a</td>
 <td>200, OK</td>
 <td><strong>Contacts found</strong></td>
@@ -38,7 +38,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
   <td><em>empty</em></td>
 </tr>
 <td>GET</td>
-<td>`/Contacts?search=<params>`</td>
+<td>/Contacts?search=<params></td>
 <td>n/a</td>
 <td>200, OK</td>
 <td><strong>Contacts found</strong></td>
@@ -52,7 +52,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>POST</td>
-<td>`/Contacts`</td>
+<td>/Contacts</td>
 <td>n/a</td>
 <td>201, Created</td>
 <td><strong>Contact created</strong></td>
@@ -71,7 +71,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>GET</td>
-<td>`/Contacts/:id`</td>
+<td>/Contacts/:id</td>
 <td>n/a</td>
 <td>200, OK</td>
 <td><strong>Contact found</strong</td>
@@ -90,7 +90,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>PATCH</td>
-<td>`/Contacts/:id`</td>
+<td>/Contacts/:id</td>
 <td><strong>Contact delta</strong></td>
 <td>200, OK</td>
 <td><strong>Contact updated</strong></td>
