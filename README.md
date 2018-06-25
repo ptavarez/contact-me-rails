@@ -52,6 +52,7 @@ In your terminal: ```bundle install```
 | Verb | URI Pattern | Controller#Action |
 |------|-------------|-------------------|
 | GET  | `/contacts`    | `contacts#index`|
+| GET   | `/contacts?search=<params>`  |  `contacts#index`|
 | GET  | `/contacts/:id`  | `contacts#show` |
 | PATCH | `/contacts/:id`  | `contacts#update`|
 | DELETE |`/contacts/:id`| `contacts#destroy` |

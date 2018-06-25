@@ -37,6 +37,19 @@ If this requirement is unmet, the response will be 404 Not Found, except for
   <td>401 Unauthorized</td>
   <td><em>empty</em></td>
 </tr>
+<td>GET</td>
+<td>`/Contacts?search=<params>`</td>
+<td>n/a</td>
+<td>200, OK</td>
+<td><strong>Contacts found</strong></td>
+</tr>
+<tr>
+  <td colspan="3">
+  Retrieves all Contacts that match search parameter and are associated with the user.
+  </td>
+  <td>401 Unauthorized</td>
+  <td><em>empty</em></td>
+</tr>
 <tr>
 <td>POST</td>
 <td>`/Contacts`</td>
@@ -98,6 +111,9 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 
 The `index` action is a *GET* that retrieves all the Contacts associated with a
  user.
+ 
+If a search parameter is given, all contacts that match the parameter will be retreived.
+ 
 The response body will contain JSON containing an array of Contacts, e.g.:
 
 ```json
