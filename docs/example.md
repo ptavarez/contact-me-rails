@@ -25,7 +25,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>GET</td>
-<td>`/Examples`</td>
+<td>/Examples</td>
 <td>n/a</td>
 <td>200, OK</td>
 <td><strong>Examples found</strong></td>
@@ -39,7 +39,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>POST</td>
-<td>`/Examples`</td>
+<td>/Examples</td>
 <td>n/a</td>
 <td>201, Created</td>
 <td><strong>Example created</strong></td>
@@ -58,7 +58,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>GET</td>
-<td>`/Examples/:id`</td>
+<td>/Examples/:id</td>
 <td>n/a</td>
 <td>200, OK</td>
 <td><strong>Example found</strong</td>
@@ -77,7 +77,7 @@ If this requirement is unmet, the response will be 404 Not Found, except for
 </tr>
 <tr>
 <td>PATCH</td>
-<td>`/Examples/:id`</td>
+<td>/Examples/:id</td>
 <td><strong>Example delta</strong></td>
 <td>200, OK</td>
 <td><strong>Example updated</strong></td>
